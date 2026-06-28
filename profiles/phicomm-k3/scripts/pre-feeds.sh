@@ -23,13 +23,13 @@ clone_repo() {
 FIRMWARE_VARIANT='69027'
 FIRMWARE_PATH='package/lean/k3-brcmfmac4366c-firmware/files/lib/firmware/brcm/brcmfmac4366c-pcie.bin'
 
-echo '>>> Add Passwall Feed >>>'
-append_feed_if_missing 'src-git passwall https://github.com/openwrt-passwall/openwrt-passwall-packages'
-echo '<<< Completed Add Passwall Feed <<<'
+#echo '>>> Add Passwall Feed >>>'
+#append_feed_if_missing 'src-git passwall https://github.com/openwrt-passwall/openwrt-passwall-packages'
+#echo '<<< Completed Add Passwall Feed <<<'
 
-echo '>>> Clone Passwall Package >>>'
-clone_repo 'https://github.com/openwrt-passwall/openwrt-passwall' 'main' 'package/lean/luci-app-passwall'
-echo '<<< Completed Clone Passwall Package <<<'
+#echo '>>> Clone Passwall Package >>>'
+#clone_repo 'https://github.com/openwrt-passwall/openwrt-passwall' 'main' 'package/lean/luci-app-passwall'
+#echo '<<< Completed Clone Passwall Package <<<'
 
 echo '>>> Clone Argon Theme >>>'
 clone_repo 'https://github.com/jerrykuku/luci-theme-argon' '18.06' 'package/lean/luci-theme-argon'
